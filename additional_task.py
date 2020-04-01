@@ -47,12 +47,12 @@ class Lab3:
     def result(self):
         x_t = self.count_x_t()
         time_start1 = time()
-        self.count_f_x(x_t)
+        self.count_f_x(x_t) # функція побудована самостійно
         time_end1 = time()
         time_res1 = time_end1-time_start1
 
         time_start2 = time()
-        np.fft(x_t)
+        np.fft(x_t) # функція numpy.fft.ftt()
         time_end2 = time()
         time_res2 = time_end2 - time_start2
 
